@@ -1,0 +1,32 @@
+.list {
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.load-more {
+    padding: 20px 40px;
+    font-size: 24px;
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(144,144,144,0.87); 
+    box-shadow: 5px 5px 15px 1px rgba(144,144,144,0.87);
+    margin-bottom: 50px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
