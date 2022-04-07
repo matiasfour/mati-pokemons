@@ -25,10 +25,12 @@ const PokemonPage = () => {
     <div className='pokemon-content' >  
       <Link to={`/`} className="back-button"> &#10094; Back to Pokedex</Link>
       <div className='pokemon-main-info' >
-         <img
-          className='pokemon-info-image' 
-          src={pokemon?.sprites.other.dream_world.front_default} 
-          alt='pokemon'/>
+        <div className='pokemon-image-wrapper'>
+          <img
+            className='pokemon-info-image' 
+            src={pokemon?.sprites.other.dream_world.front_default} 
+            alt='pokemon'/>
+        </div>
          <div className='habitats' >
            <h1 className='pokemon-title' >{pokemon?.name}</h1>
            {pokemon?.locations.length > 0 && 
